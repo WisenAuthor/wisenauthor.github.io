@@ -10,7 +10,7 @@ hide_from_search: true
 # Fyll i när du har dem
 instagram: ""          # t.ex. https://www.instagram.com/anneliwisen/
 portrait: ""           # t.ex. /bilder/portratt.jpg
-book_title: "Arbetstitel"
+book_title: "Vaken"
 book_status: "Under arbete"
 
 markdown: kramdown
