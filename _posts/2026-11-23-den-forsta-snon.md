@@ -2,7 +2,8 @@
 layout: post
 title: "Den första snön"
 date: 2026-11-23 18:00:00 +0100
-scene: dimma
+image: /bilder/IMG_5146.jpeg
+image_alt: "Skogsstig genom kal bokskog, med ett tunt lager snö på de bruna löven"
 ---
 
 I dag föll den första snön. Och med den kom något jag inte riktigt kan förklara: en inspiration så stark att jag inte vet varifrån den kom.
