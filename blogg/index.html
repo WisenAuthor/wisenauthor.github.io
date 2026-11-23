@@ -1,0 +1,16 @@
+---
+layout: default
+title: Skrivresan
+---
+<div class="page-head">
+  <span class="kicker sp">bloggen</span>
+  <h1>Skrivresan</h1>
+  <p>Om skrivandet, promenaderna och vägen mot boken.</p>
+</div>
+<section class="band"><div class="wrap">
+  {% if site.posts.size > 0 %}
+  <div class="posts">{% for post in site.posts %}{% include card.html post=post %}{% endfor %}</div>
+  {% else %}
+  <div class="empty">Det första inlägget är på väg.</div>
+  {% endif %}
+</div></section>
