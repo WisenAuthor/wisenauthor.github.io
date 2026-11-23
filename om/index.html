@@ -1,0 +1,18 @@
+---
+layout: default
+title: Om mig
+---
+<section class="about">
+  <figure class="mat">
+    {% if site.portrait != "" %}<div class="photo real"><img src="{{ site.portrait | relative_url }}" alt="Anneli Wisén"></div>{% else %}<div class="photo"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#s-hav"/></svg><span class="sp">porträtt kommer</span></div>{% endif %}
+    <figcaption class="sp"><span>anneli wisén</span><span>österlen</span></figcaption>
+  </figure>
+  <div>
+    <span class="kicker sp">om mig</span>
+    <h1 style="font-size:clamp(52px,7vw,96px);font-style:italic">Hej, jag heter Anneli</h1>
+    <div class="prose" style="margin-top:28px">
+      <p>Jag kommer från förlagsvärlden och har alltid skrivit – mest skönlitteratur. I dag studerar jag journalistik, arbetar med yoga och skriver vid ett skrivbord på Österlen.</p>
+      <p>Den här sidan är min öppna anteckningsbok. Här delar jag resan mot boken jag drömmer om att ge ut: dagarna när orden kommer, dagarna när de inte gör det, och promenaderna däremellan.</p>
+    </div>
+  </div>
+</section>
