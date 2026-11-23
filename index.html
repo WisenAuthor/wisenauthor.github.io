@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section class="hero">
+  <figure class="mat">
+    {% if site.portrait != "" %}<div class="photo real"><img src="{{ site.portrait | relative_url }}" alt="Anneli Wisén"></div>{% else %}<div class="photo"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#s-trad"/></svg><span class="sp">porträtt kommer</span></div>{% endif %}
+    <figcaption class="sp"><span>österlen</span><span>{{ site.time | date: '%Y' }}</span></figcaption>
+  </figure>
+  <div>
+    <span class="kicker sp">författare</span>
+    <h1>anneli wisén</h1>
+    <p class="lede">Jag skriver skönlitteratur, och här delar jag vägen mot boken – ljuset, motståndet och allt som händer mellan raderna.</p>
+    <a class="btn" href="{{ '/blogg/' | relative_url }}">följ skrivresan <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="band book" id="boken"><div class="wrap">
+  <div class="cover"><div><h3>{{ site.book_title }}</h3><small class="sp">anneli wisén</small></div></div>
+  <div>
+    <span class="kicker sp">boken</span>
+    <h2>{{ site.book_status }}</h2>
+    <p>En roman tar form vid skrivbordet på Österlen. Här kommer du att kunna läsa mer om boken – och vara bland de första att få veta när den är klar.</p>
+    <a class="btn" href="{{ '/blogg/' | relative_url }}">läs om processen <span aria-hidden="true">→</span></a>
+  </div>
+</div></section>
+
+<section class="band" id="skrivresan"><div class="wrap">
+  <div class="shead"><div><span class="kicker sp">bloggen</span><h2>Skrivresan</h2></div><a class="sp" href="{{ '/blogg/' | relative_url }}">alla inlägg</a></div>
+  {% if site.posts.size > 0 %}
+  <div class="posts">{% for post in site.posts limit:3 %}{% include card.html post=post %}{% endfor %}</div>
+  {% else %}
+  <div class="empty">Det första inlägget är på väg.</div>
+  {% endif %}
+</div></section>
+
+<section class="band" style="padding-top:0"><div class="wrap">
+  <div class="shead"><div><span class="kicker sp">mellan skrivpassen</span><h2>Från promenaderna</h2></div>{% if site.instagram != "" %}<a class="sp" href="{{ site.instagram }}">följ på instagram</a>{% endif %}</div>
+  <div class="strip">{% assign sc = "sten,trad,hav,dyn,skog,dimma" | split: "," %}{% for s in sc %}<div class="photo"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#s-{{ s }}"/></svg></div>{% endfor %}</div>
+</div></section>
+
+<section class="band follow">
+  <span class="kicker sp">följ med</span>
+  <h2>Vägen mot boken</h2>
+  <p>Jag delar processen öppet – från första utkast till färdig bok. Snart kan du följa med på Instagram och få brev från skrivbordet direkt i din inkorg.</p>
+  <div class="acts">
+    {% if site.instagram != "" %}<a class="btn" href="{{ site.instagram }}">instagram</a>{% else %}<span class="btn off">instagram – snart</span>{% endif %}
+    <span class="btn off">brev från skrivbordet – snart</span>
+  </div>
+</section>
