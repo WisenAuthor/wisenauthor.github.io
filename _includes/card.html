@@ -1,0 +1,6 @@
+<a class="post" href="{{ include.post.url | relative_url }}">
+  {% include photo.html post=include.post %}
+  <time class="sp" datetime="{{ include.post.date | date_to_xmlschema }}">{% include datum.html date=include.post.date %}</time>
+  <h3>{{ include.post.title }}</h3>
+  <p>{{ include.post.excerpt | strip_html | truncatewords: 22 }}</p>
+</a>
