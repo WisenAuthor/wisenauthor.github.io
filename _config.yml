@@ -1,0 +1,17 @@
+title: anneli wisén
+description: Författare på Österlen. Här delar jag vägen mot boken.
+lang: sv
+timezone: Europe/Stockholm
+permalink: /blogg/:year/:month/:title/
+
+# Sätt till false när sidan ska synas i Google
+hide_from_search: true
+
+# Fyll i när du har dem
+instagram: ""          # t.ex. https://www.instagram.com/anneliwisen/
+portrait: ""           # t.ex. /bilder/portratt.jpg
+book_title: "Arbetstitel"
+book_status: "Under arbete"
+
+markdown: kramdown
+exclude: [README.md]
