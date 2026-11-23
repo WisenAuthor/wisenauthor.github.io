@@ -1,0 +1,1 @@
+{% if include.post.image %}<div class="photo real"><img src="{{ include.post.image | relative_url }}" alt="{{ include.post.image_alt | default: include.post.title }}" loading="lazy"></div>{% else %}<div class="photo"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#s-{{ include.post.scene | default: 'hav' }}"/></svg></div>{% endif %}
