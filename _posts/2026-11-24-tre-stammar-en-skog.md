@@ -2,7 +2,8 @@
 layout: post
 title: "Tre stammar, en skog"
 date: 2026-11-24 22:00:00 +0100
-scene: trad
+image: /bilder/IMG_5140.jpeg
+image_alt: "Rocky, en liten rödbrun hund med stora fjäderöron, sitter på en kudde i en korgstol bredvid bokhyllan"
 ---
 
 Supermånen lyser fortfarande så starkt. I kväll har jag haft klasser i Åhus, men innan dess satt jag stora delar av dagen med manuset.
